@@ -125,9 +125,11 @@ class User extends BaseUser implements EmailTwoFactorInterface, GoogleTwoFactorI
     private $googleAuthenticatorSecret;
 
     /**
+     * @var array
+     *
      * @ORM\Column(type="json", nullable=true)
      */
-    private array $backupCodes;
+    private $backupCodes;
 
     /**
      * @var bool
